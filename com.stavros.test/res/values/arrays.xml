@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+     <array name="testArray">  
+    <item>first</item>  
+    <item>second</item>  
+    <item>third</item>  
+    <item>fourth</item>  
+    <item>fifth</item>  
+     </array>
+   
+     <array name="testArray2">  
+    <item>a</item>  
+    <item>b</item>  
+    <item>c</item>  
+    <item>d</item>  
+    <item>e</item>  
+     </array>
+     
+     <string-array name="listOfFeedNames">
+         <item>Philenews Top Stories</item>
+         <item>Newsit Stories</item>
+     </string-array>
+     
+     <string-array name="listOfFeedURLs">
+         <item>http://www.philenews.com/Publications/RssModule/rss.aspx?CategoryId=399</item>
+         <item>http://www.newsit.com.cy/rss/artrss.php</item>
+     </string-array>
+</resources>

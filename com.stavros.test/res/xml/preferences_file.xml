@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+<CheckBoxPreference
+        android:key="pref_sync"
+        android:title="@string/pref_sync"
+        android:summary="@string/pref_sync_summ"
+        android:defaultValue="true" />
+<EditTextPreference 
+    android:key="summary1_preference"
+    android:summary="@string/pref_edit_text" 
+    android:title="@string/pref_edit_title"/>
+<ListPreference 
+    android:key="radiolist1_preference"
+    android:entryValues="@array/testArray2" 
+    android:entries="@array/testArray"
+    android:title="title" 
+    android:summary="summary"/>
+    
+    
+</PreferenceScreen>

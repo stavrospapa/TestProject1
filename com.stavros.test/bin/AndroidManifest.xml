@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.com.stavros.test"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.com.stavros.test.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.com.stavros.test.DefaultMessageActivity"
+            android:label="@string/title_activity_defailt_message"
+            android:parentActivityName="com.stavros.test.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stavros.test.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.com.stavros.test.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.example.com.stavros.test.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.com.stavros.test.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.com.stavros.test.ShowStories"
+            android:label="@string/title_activity_show_stories"
+            android:parentActivityName="com.example.com.stavros.test.DefaultMessageActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.com.stavros.test.DefaultMessageActivity" />
+        </activity>
+        <activity
+            android:name="com.example.com.stavros.test.ShowStory2"
+            android:label="@string/title_activity_show_story2"
+            android:parentActivityName="com.example.com.stavros.test.ShowStories" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.com.stavros.test.ShowStories" />
+        </activity>
+        <activity
+            android:name="com.example.com.stavros.test.SensorActivity"
+            android:label="@string/title_activity_sensor"
+            android:parentActivityName="com.example.com.stavros.test.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.com.stavros.test.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
