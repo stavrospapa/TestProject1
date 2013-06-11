@@ -5,7 +5,7 @@ public class URLEntry {
 	  private String urlname;
 	  private String urladdress;
 
-	  public long getId() {
+	  public long getId() { 
 	    return id;
 	  }
 
